@@ -1,6 +1,51 @@
-function menuClick(dropDownSetting){
-    var dropDown = document.getElementById('drowndownEvent');
-    var dropDownSetting = dropDown.style.display;
+
+
+function eventButtonHandler0(){
+    const eventDetails = document.getElementById('eventDetails0');
+    const buttonText = document.getElementById('eventButton0');
+    let eventDetailsState = eventDetails.style.display;
+
+    if(eventDetailsState === 'block'){
+        eventDetails.style.display = 'none';
+        buttonText.textContent = "Show Details";
+    } else {
+        eventDetails.style.display = 'block';
+        buttonText.textContent = "Hide Details";
+    }
+}
+
+function eventButtonHandler1(){
+    let eventDetails = document.getElementById('eventDetails1');
+    let buttonText = document.getElementById('eventButton1');
+    let eventDetailsState = eventDetails.style.display;
+
+    if(eventDetailsState === 'block'){
+        eventDetails.style.display = 'none';
+        buttonText.textContent = "Show Details";
+    } else {
+        eventDetails.style.display = 'block';
+        buttonText.textContent = "Hide Details";
+    }
+}
+
+function eventButtonHandler2(){
+    let eventDetails = document.getElementById('eventDetails2');
+    let buttonText = document.getElementById('eventButton2');
+    let eventDetailsState = eventDetails.style.display;
+
+    if(eventDetailsState === 'block'){
+        eventDetails.style.display = 'none';
+        buttonText.textContent = "Show Details";
+    } else {
+        eventDetails.style.display = 'block';
+        buttonText.textContent = "Hide Details";
+    }
+}
+
+
+function menuClick(){
+    const dropDown = document.getElementById('drowndownEvent');
+    let dropDownSetting = dropDown.style.display;
 
     if(dropDownSetting === 'block'){
         dropDown.style.display = 'none';
@@ -14,4 +59,6 @@ function menuClick(dropDownSetting){
         }
     }
 }
+
+
 
