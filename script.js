@@ -60,5 +60,19 @@ function menuClick(){
     }
 }
 
+window.onscroll = function(){
+    let albums = document.querySelector(".albumsContainer");
+    let events = document.querySelector("#upcoming-events");
+    let scrollDown = this.scrollY;
+
+    if(scrollDown === 0){
+        events.style.animation = 'none';
+    albums.style.animation = 'none';
+    } else {
+        events.style.animation = 'fadeIn 5s';
+        albums.style.animation = 'fadeIn 5s';
+    }
+
+}
 
 
