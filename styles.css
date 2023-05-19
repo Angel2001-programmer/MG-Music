@@ -33,14 +33,16 @@ header {
 }
 
 .dropdown_menu{
+    position: fixed;
     display: none;
-}
-
-.dropdown_menu{
     padding: 0;
+    top: 72px;
+    width: 100%;
     border-color: lightgray;
-    margin: 0 15px 15px 0;
-} 
+    background-color: white;
+    padding-bottom: 10px;
+    z-index: 2;
+}
 
 .dropdown_menu, ul{
     text-align: center;
@@ -177,7 +179,7 @@ a{
   #upcoming-events {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px; 
     box-sizing: border-box;
     padding-top: 10px;
   }
@@ -242,12 +244,104 @@ a{
 }
 
   footer{
-    width: 100%;
     height: 72px;
     background-color: rgb(0, 0, 43);
     color: white;
     padding-top: 23px;
     text-align: center;
+}
+
+
+@media  (max-width: 1280px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .py-3{
+        justify-content: end;
+    }
+
+    .hero-text{
+        justify-content: center;
+        place-items: center;
+        }
+
+        .heroimage{
+            width: 100%;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img{
+            height: 600px;
+        }
+}
+
+@media all and (max-width: 820px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .py-3{
+        justify-content: end;
+    }
+
+    .hero-text{
+        justify-content: center;
+        place-items: center;
+        }
+
+        .heroimage{
+            width: 100%;
+        }
+
+        .heading1{
+            font-size: 19px;
+        }
+
+        p{
+            font-size: 11px;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events h1{
+            font-size: 19px;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .event h2{
+            font-size: 19px;
+        }
 }
 
 /* Mobile styles down below; */
@@ -262,4 +356,241 @@ a{
     .py-3{
         justify-content: end;
     }
+
+    .hero-text{
+        justify-content: center;
+        place-items: center;
+        }
+
+        .heroimage{
+            width: 100%;
+        }
+
+        .heading1{
+            padding-left: 10px;
+            font-size: 21px;
+        }
+
+        p{
+            padding-left: 10px;
+            font-size: 15px;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events h1{
+            font-size: 19px;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .event h2{
+            font-size: 19px;
+        }
+}
+
+@media all and (max-width: 420px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .py-3{
+        justify-content: end;
+    }
+
+    .hero-text{
+        justify-content: center;
+        place-items: center;
+        font-size: 9px;
+    }
+        .heading1{
+            font-size: 8.6px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events h1{
+            font-size: 19px;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img.image{
+            height: 250px;
+            width: 230px;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .event h2{
+            font-size: 19px;
+        }
+
+        footer p{
+            font-size: 11px;
+        }
+}
+
+@media all and (max-width: 280px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    html{
+        width: 20em;
+    }
+
+    .py-3{
+        justify-content: end;
+    }
+
+    .hero-text{
+        position: absolute;
+        justify-content: center;
+        place-items: center;
+        font-size: 11px;
+        left: 160px;
+    }
+
+        .heroimage{
+            width: 20em;
+        }
+
+        .heading1{
+            font-size: 8.6px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events h1{
+            font-size: 19px;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img.image{
+            height: 250px;
+            width: 230px;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .event h2{
+            font-size: 19px;
+        }
+
+        footer p{
+            font-size: 11px;
+        }
+}
+
+@media all and (max-width: 225px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .py-3{
+        justify-content: end;
+    }
+
+    .hero-text{
+        position: absolute;
+        font-size: 10px;
+        left: 160px;
+    }
+        .heading1{
+            font-size: 8.6px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .nav-item{
+            display: none;
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            place-items: center;
+        }
+
+        #upcoming-events h1{
+            font-size: 19px;
+        }
+
+        #upcoming-events{
+            justify-content: center;
+            place-items: center;
+        }
+
+        img.image{
+            height: 250px;
+            width: 230px;
+        }
+
+        img{
+            height: 200px;
+        }
+
+        .event h2{
+            font-size: 19px;
+        }
+
+        footer p{
+            font-size: 11px;
+        }
+        html {
+            width: 20em;
+        }
 }
